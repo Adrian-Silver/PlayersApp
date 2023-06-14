@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/playerListFragment">
+
+    <fragment
+        android:id="@+id/playerListFragment"
+        android:name="com.example.room_playersapp.PlayerListFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_player_list" >
+        <action
+            android:id="@+id/action_playerListFragment_to_addPlayerFragment"
+            app:destination="@id/addPlayerFragment" />
+        <action
+            android:id="@+id/action_playerListFragment_to_playerDetailsFragment"
+            app:destination="@id/playerDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/playerDetailsFragment"
+        android:name="com.example.room_playersapp.PlayerDetailsFragment"
+        android:label="@string/player_details_title"
+        tools:layout="@layout/fragment_player_details">
+        <action
+            android:id="@+id/action_playerDetailsFragment_to_addPlayerFragment"
+            app:destination="@id/addPlayerFragment" />
+        <argument
+            android:name="player_id"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPlayerFragment"
+        android:name="com.example.room_playersapp.AddPlayerFragment"
+        android:label="{title}"
+        tools:layout="@layout/fragment_add_player" >
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="player_id"
+            android:defaultValue="-1"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_addPlayerFragment_to_playerListFragment"
+            app:destination="@id/playerListFragment" />
+    </fragment>
+</navigation>

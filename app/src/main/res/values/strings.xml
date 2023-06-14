@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">Room-PlayersApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_player_title">Add New Player</string>
+    <string name="player_details_title">Player Details</string>
+</resources>
