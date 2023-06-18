@@ -80,10 +80,10 @@ class PlayerDetailsFragment : Fragment() {
     private fun bind(player: Player) {
 
         binding.apply {
-            nameDetailMtv.text = player.playerName
-            ageDetailMtv.text = player.playerAge.toString()
-            valueDetailMtv.text = player.playerValue.toString()
-            positionDetailMtv.text = player.playerPosition
+            nameDetailEtv.text = player.playerName
+            ageDetailEtv.text = player.playerAge.toString()
+            valueDetailEtv.text = player.playerValue.toString()
+            positionDetailEtv.text = player.playerPosition
 
             btnPlayerEdit.setOnClickListener { editPlayer() }
             btnPlayerDelete.setOnClickListener { deletePlayer() }

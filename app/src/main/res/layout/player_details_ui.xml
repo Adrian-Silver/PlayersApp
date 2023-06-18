@@ -45,7 +45,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:gravity="start"
+                android:textAlignment="textStart"
                 android:textColor="#7C7070"
                 android:layout_marginTop="24dp"
                 android:paddingTop="4dp"
@@ -85,8 +85,8 @@
                 android:textStyle="bold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="start"
+               android:layout_weight="1"
+                android:textAlignment="textStart"
                 android:textColor="#7C7070"
                 android:layout_marginStart="6dp"
                 android:paddingBottom="8dp" />
@@ -104,33 +104,33 @@
             android:orientation="horizontal" >
 
 
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/positionDetailMtv"
-                android:text="Player Position :"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:textAlignment="textStart"
-                android:textColor="#7C7070"
-                android:layout_marginStart="6dp"
-                android:paddingBottom="8dp"
-                />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/positionDetailMtv"
+            android:text="Player Position :"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="textStart"
+            android:textColor="#7C7070"
+            android:layout_marginStart="6dp"
+            android:paddingBottom="8dp"
+            />
 
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/positionDetailEtv"
-                android:text="Player Position :"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="start"
-                android:textColor="#7C7070"
-                android:layout_marginStart="6dp"
-                android:paddingBottom="8dp"
-                app:layout_constraintStart_toEndOf="@id/positionDetailMtv" />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/positionDetailEtv"
+            android:text="Player Position :"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="textStart"
+            android:textColor="#7C7070"
+            android:layout_marginStart="6dp"
+            android:paddingBottom="8dp"
+            app:layout_constraintStart_toEndOf="@id/positionDetailMtv" />
 
         </LinearLayout>
 
@@ -145,33 +145,33 @@
 
 
 
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/valueDetailMtv"
-                android:text="Player Value :"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:textAlignment="textStart"
-                android:textColor="#7C7070"
-                android:layout_marginStart="6dp"
-                android:paddingBottom="8dp"
-                />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/valueDetailMtv"
+            android:text="Player Value :"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="textStart"
+            android:textColor="#7C7070"
+            android:layout_marginStart="6dp"
+            android:paddingBottom="8dp"
+            />
 
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/valueDetailEtv"
-                android:text="Player Value :"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="start"
-                android:textColor="#7C7070"
-                android:layout_marginStart="6dp"
-                android:paddingBottom="8dp"
-                />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/valueDetailEtv"
+            android:text="Player Value :"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_weight="1"
+            android:textAlignment="textStart"
+            android:textColor="#7C7070"
+            android:layout_marginStart="6dp"
+            android:paddingBottom="8dp"
+            />
 
         </LinearLayout>
 
