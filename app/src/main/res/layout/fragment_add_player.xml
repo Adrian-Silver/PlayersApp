@@ -8,101 +8,124 @@
 
 
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
 
-            <TextView
-                android:id="@+id/tvEnterDetails"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="90dp"
-                android:text="Add a Player"
-                android:textColor="@color/black"
-                android:textSize="30sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.497"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/tvEnterDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Add a Player"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-            <EditText
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/playerNameEtL"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="36dp"
+            android:hint="Name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvEnterDetails">
+
+            <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/playerNameEt"
-                android:layout_width="360dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="36dp"
-                android:background="#CD567ECD"
-                android:hint="Name"
-                android:paddingLeft="20dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tvEnterDetails" />
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
+        </com.google.android.material.textfield.TextInputLayout>
 
-            <EditText
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/playerAgeEtL"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="32dp"
+            android:hint="Age"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/playerNameEtL">
+
+            <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/playerAgeEt"
-                android:layout_width="360dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="32dp"
-                android:hint="Age"
-                android:background="#CD567ECD"
-                android:paddingLeft="20dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/playerNameEt" />
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
 
 
-            <EditText
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/playerPositionEtL"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="32dp"
+            android:hint="Position"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/playerAgeEtL" >
+
+            <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/playerPositionEt"
-                android:layout_width="360dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="32dp"
-                android:background="#CD567ECD"
-                android:hint="Position"
-                android:paddingLeft="20dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/playerAgeEt" />
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
 
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/playerValueEtL"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="32dp"
+            android:hint="Value"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/playerPositionEtL" >
 
-            <EditText
+            <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/playerValueEt"
-                android:layout_width="360dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="32dp"
-                android:background="#CD567ECD"
-                android:hint="Value"
-                android:paddingLeft="20dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/playerPositionEt" />
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
-            <Button
-                android:id="@+id/btnSavePlayer"
-                android:layout_width="360dp"
-                android:layout_height="60dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="24dp"
-                android:backgroundTint="#2CAA86"
-                android:text="Save"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/playerValueEt" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-            <Button
-                android:id="@+id/btnCourseNext"
-                android:layout_width="360dp"
-                android:layout_height="60dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="16dp"
-                android:backgroundTint="#2CAA86"
-                android:text="Proceed"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/btnSavePlayer"
-                app:layout_constraintBottom_toBottomOf="parent"
-                android:layout_marginBottom="16dp"/>
-        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSavePlayer"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:text="Save"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/playerValueEtL"
+            />
+
+
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/btnCourseNext"-->
+<!--            android:layout_width="180dp"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:text="Proceed"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/btnSavePlayer"-->
+<!--            />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
